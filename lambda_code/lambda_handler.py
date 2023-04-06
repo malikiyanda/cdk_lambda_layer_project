@@ -7,5 +7,5 @@ def lambda_handler(event, context):
         'headers': {
             'Content-Type': 'text/plain'
         },
-        'body': 'Hello from Lambda created by gitHub UPDATED'
+        'body': 'Hello from Lambda created by gitHub UPDATED-Check'
     }
