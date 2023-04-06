@@ -17,8 +17,8 @@ class ResourceStack(Stack):
         
         # Create your Lambda function and include the layer reference
         function = function_lambda.Function(self,
-                                            "DemoCDKGITHUBLambda",
-                                            function_name="codepipeline_lambda",
+                                            "CDKGITHUBLambda",
+                                            function_name="InsertDB-function",
                                             runtime=function_lambda.Runtime.PYTHON_3_9,
                                             code=function_lambda.Code.from_asset('./lambda_code'),
                                             handler="lambda_handler.lambda_handler",
