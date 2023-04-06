@@ -11,7 +11,7 @@ class ResourceStack(Stack):
         
         # Define your Lambda layer
         my_layer = function_lambda.LayerVersion(self, "SqlAlchemyLayer",
-        code=function_lambda.Code.from_asset("lambda_layers/python"),
+        code=function_lambda.Code.from_asset("./lambda_layers"),
         compatible_runtimes=[function_lambda.Runtime.PYTHON_3_9],
         description="A layer for SqlAlchemy")
         
